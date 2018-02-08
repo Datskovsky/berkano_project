@@ -10,22 +10,20 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.bg-home{
-    background-image: url('../img/bg.jpg');
+#bg-home{
+    background:url('../img/bg-home.jpg') -25px -50px;
     background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-    // background: linear-gradient(to top left, pink, powderblue);
+    position: fixed;
+    top: 0;
+    z-index:0;
     min-height: 100%;
+    background-size: calc(100% + 50px);
+    overflow-x: hidden;
     padding: 0;
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
     text-transform: uppercase;
     font-weight: 300;
 }
-
-// .bg-navbar{
-//     background-color: rgba($color: #000000, $alpha: .3);
-// }
 
 .navbar-toggler{
     margin-top: 1rem;
@@ -56,13 +54,6 @@ body{
     padding-bottom: 0.5rem;
 }
 
-// .logo{
-//     max-width: 324px;
-//     height: calc(100% - 68px);
-//     // background-color: #000;
-//     float: left;
-// }
-
 .logo{
     position: absolute;
     bottom: 30px;
@@ -77,9 +68,8 @@ body{
 
 .elem-container{
     height: calc(100% - 68px);
-    // width: calc(100% - 324px);
     width: 100%;
-    // background-color: #fff;
+    margin-top: 4rem;
 }
 
 .elem-container a{
@@ -101,8 +91,8 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     transition: .3s ease-in-out;
     -webkit-transition: .3s ease-in-out;
-    -moz--webkit-transition: .3s ease-in-out;
-    -o--webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
 }
 
 .perpective-text:hover{
@@ -115,38 +105,38 @@ body{
 // figure
 
 .figure1{
-    margin-top: 15px;
+    margin-top: 1rem;
 
     img{
         animation: move-1 3s infinite ease-in-out;
-        animation-delay: 0s
+        animation-delay: 0s;
     }
 }
 
 .figure2{
-    margin-top: 30px;
+    margin-top: 1.8rem;
 
     img{
         animation: move-2 3s infinite ease-in-out;
-        animation-delay: 0.3s
+        animation-delay: 0.3s;
     }
 }
 
 .figure3{
-    margin-top: 100px;
+    margin-top: 6rem;
 
     img{
         animation: move-3 3s infinite ease-in-out;
-        animation-delay: 0s
+        animation-delay: 0s;
     }
 }
 
 .figure4{
-    margin-top: 250px;
+    margin-top: 15rem;
 
     img{
         animation: move-4 3s infinite ease-in-out;
-        animation-delay: 0.3s
+        animation-delay: 0.3s;
     }
 }
 
